@@ -1,5 +1,5 @@
 body {
-  background-color: dimgray;
+  background-color: #505050;
   color: floralwhite;
   font: 30px Trebuchet, sans-serif;
 }
@@ -9,8 +9,16 @@ body {
   width: 50%;
 }
 
-fieldset,legend {
-  background-color: dimgray;
+legend {
+  background-color: gray	;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+fieldset {
+  margin: 20px;
+  background-color: #606060	;
+  border-radius: 5px;
 }
 
 button {
@@ -22,10 +30,11 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 button:hover {
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.70), 0 17px 50px 0 rgba(0,0,0,0.70);
 }
 
 @media screen and (prefers-color-scheme: light) {
