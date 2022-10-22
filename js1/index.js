@@ -10,8 +10,19 @@ const questions = [
   {
     question: "Is Olivia a boy?",
     answer: false
+  },
+  {
+    question: "Does Olivia have a sister?",
+    answer: true
+  },
+  {
+    question: "Does Olivia live in Hammarby Sjöstad?",
+    answer: false
+  },
+  {
+    question: "Has Olivia been to Greece?",
+    answer: true
   }
-
 ];
 
 let index = 0;
