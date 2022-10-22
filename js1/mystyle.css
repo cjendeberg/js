@@ -1,11 +1,36 @@
 body {
-  background-color: black;
+  background-color: dimgray;
+  color: floralwhite;
+  font: 30px Trebuchet, sans-serif;
 }
 
-h2 {
-  color: white
+.center {
+  margin: auto;
+  width: 50%;
 }
 
-label {
-  color: white
+fieldset,legend {
+  background-color: dimgray;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
 }

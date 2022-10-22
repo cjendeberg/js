@@ -18,13 +18,17 @@ let index = 0;
 let result = questions.map(x => {
   index++;
   return (
-    `<div>
-      <h2>${x.question}</h2>
-      <label for="input${index}T"/>true</label>
+    `<fieldset>
+      <legend>${x.question}</legend>
+      <div>
       <input type="radio" id="input${index}T" name="input${index}" value="true"/>
-      <label for="input${index}F"/>false</label>
+      <label for="input${index}T"/>true</label>
+      </div>
+      <div>
       <input type="radio" id="input${index}F" name="input${index}" value="false"/>      
-    </div>`
+      <label for="input${index}F"/>false</label>
+      </div>
+    </fieldset>`
   );
 }).join("");
 
@@ -49,8 +53,8 @@ processBtn.addEventListener("click", () => {
   }
   let resultElement = document.getElementById("result");
   if(error.length > 0){
-    resultElement.value = error;
+    resultElement.innerHTML = error;
   } else {
-    resultElement.value = result;
+    resultElement.innerHTML = "Result: " + result;
   }
 })
